@@ -69,9 +69,9 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
-static const char *upvol[]   = { "/usr/bin/pamixer",  "-i", "5",     NULL };
-static const char *downvol[] = { "/usr/bin/pamixer",  "-d", "5",     NULL };
-static const char *mutevol[] = { "/usr/bin/pamixer",  "-t",  NULL };
+static const char *upvol[]   = { "/usr/bin/amixer",  "set", "Master", "5%+",     NULL };
+static const char *downvol[] = { "/usr/bin/amixer",  "set", "Master", "5%-",    NULL };
+static const char *mutevol[] = { "/usr/bin/amixer",  "set", "Master", "toggle",  NULL };
 static const char *light_up[] = {"/usr/bin/brightnessctl", "s", "350+",  NULL};
 static const char *light_down[] = {"/usr/bin/brightnessctl", "s", "350-", NULL};
 
@@ -80,11 +80,11 @@ static Key keys[] = {
 	{ MODKEY, 	         	XK_space, 	   spawn,          SHCMD("rofi -show drun") },
 	{ MODKEY,	                XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
+	{ 0,                       XF86XK_AudioLowerVolume, spawn, SHCMD("amixer set Master 5%-") },
 	{ 0,                            XK_Print,  spawn,          SHCMD("scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.png")},
 	{ MODKEY,			XK_Print,  spawn,          SHCMD("scrot -d1 && mv *.png ~/Pictures/Screenshots/") },
-	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
-	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+	{ 0,                       XF86XK_AudioMute, spawn, SHCMD("amixer set Master toggle") },
+	{ 0,                       XF86XK_AudioRaiseVolume, spawn, SHCMD("amixer set Master 5%+") },
         { 0,				XF86XK_MonBrightnessUp,		spawn,	{.v = light_up} },
 	{ 0,				XF86XK_MonBrightnessDown,	spawn,	{.v = light_down} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },

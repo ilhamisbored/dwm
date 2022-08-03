@@ -11,7 +11,7 @@ static const int vertpadbar	    = 5;
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 10;       /* vertical padding of bar */
 static const int sidepad            = 7;       /* horizontal padding of bar */
-static const char *fonts[]          = { "Font Awesome:size=12" };
+static const char font[]            = "LigaSFMonoNerdFont 11";
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#1F1E23";
@@ -30,7 +30,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "ﭮ", "", "﬏", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):

@@ -5,7 +5,9 @@ static const Block blocks[] = {
 
 	{"  ", "date '+%b %d %y %I:%M%p'",					1,		0},
 
-	{"  ", "/home/ilham/.config/dwmblocks/scripts/vol.sh", 1, 10},
+	{"  ", "acpi | awk '{print $4}' | sed 's/,//g'", 5, 0},
+
+	{"   ", "/home/ilham/.config/dwmblocks/scripts/vol.sh", 1, 10},
 
 	{"  ", "/home/ilham/.config/dwmblocks/scripts/updates", 360, 9},
 };

@@ -59,3 +59,10 @@ I'm using most of the default hotkeys, with a few changes here and there.
 4. Printscreen opens the snip screenshot mode for scrot
 5. Mod + Printscreen takes a screenshot of the entire screen
 6. Mod + Shift + Q kills the current dwm process
+
+
+# Installation of dwmblocks
+
+- Install acpi
+- `cd` into the dwmblocks directory
+- Run the `sudo make clean install` command.

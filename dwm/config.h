@@ -17,11 +17,13 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#1F1E23";
 static const char col_gray3[]       = "#B8B9B8";
 static const char col_gray4[]       = "#B1B2B1";
-static const char col_cyan[]        = "#27222A";
+static const char col_blue[]		= "#3F8ACD";
+static const char col_red[]			= "#CA5BB0";
+static const char col_cyan[]        = "#222222"; /*#27222A*/
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel] = {  col_gray3,  col_blue, col_blue }, /* inactive window*/
+	[SchemeNorm]  = {  col_gray3,  col_red,  col_red  }, /* active window */
 	[SchemeStatus]  = { col_gray3, col_gray1,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
 	[SchemeTagsSel]  = { col_gray4, col_cyan,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
     [SchemeTagsNorm]  = { col_gray3, col_gray1,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
@@ -49,9 +51,9 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "    ",      tile },    /* first entry is default */
+	{ "    ",      NULL },    /* no layout function means floating behavior */
+	{ "    ",      monocle },
 };
 
 /* key definitions */
@@ -69,9 +71,9 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
-static const char *upvol[]   = { "/usr/bin/amixer",  "set", "Master", "5%+",     NULL };
-static const char *downvol[] = { "/usr/bin/amixer",  "set", "Master", "5%-",    NULL };
-static const char *mutevol[] = { "/usr/bin/amixer",  "set", "Master", "toggle",  NULL };
+static const char *upvol[]   = { "/usr/bin/pamixer",  "--increase", "5",     NULL };
+static const char *downvol[] = { "/usr/bin/pamixer",  "--decrease", "5",    NULL };
+static const char *mutevol[] = { "/usr/bin/pamixer",   "--toggle-mute",  NULL };
 static const char *light_up[] = {"/usr/bin/brightnessctl", "s", "350+",  NULL};
 static const char *light_down[] = {"/usr/bin/brightnessctl", "s", "350-", NULL};
 
@@ -80,11 +82,11 @@ static Key keys[] = {
 	{ MODKEY, 	         	XK_space, 	   spawn,          SHCMD("rofi -show drun") },
 	{ MODKEY,	                XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ 0,                       XF86XK_AudioLowerVolume, spawn, SHCMD("amixer set Master 5%-") },
+	{ 0,                       XF86XK_AudioLowerVolume, spawn, SHCMD("pamixer --decrease 5") },
 	{ 0,                            XK_Print,  spawn,          SHCMD("scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.png")},
 	{ MODKEY,			XK_Print,  spawn,          SHCMD("scrot -d1 && mv *.png ~/Pictures/Screenshots/") },
-	{ 0,                       XF86XK_AudioMute, spawn, SHCMD("amixer set Master toggle") },
-	{ 0,                       XF86XK_AudioRaiseVolume, spawn, SHCMD("amixer set Master 5%+") },
+	{ 0,                       XF86XK_AudioMute, spawn, SHCMD("pamixer -t") },
+	{ 0,                       XF86XK_AudioRaiseVolume, spawn, SHCMD("pamixer --increase 5") },
         { 0,				XF86XK_MonBrightnessUp,		spawn,	{.v = light_up} },
 	{ 0,				XF86XK_MonBrightnessDown,	spawn,	{.v = light_down} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },

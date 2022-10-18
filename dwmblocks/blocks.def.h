@@ -9,7 +9,7 @@ static const Block blocks[] = {
 
 	{"   ", "/home/ilham/.config/dwmblocks/scripts/vol.sh", 1, 10},
 
-	{"  ", "/home/ilham/.config/dwmblocks/scripts/updates", 360, 9},
+	{"  ", "/home/ilham/.config/dwmblocks/scripts/updates", 5, 9},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.

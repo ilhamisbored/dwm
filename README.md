@@ -9,6 +9,7 @@
 - libXft-devel
 - freetype-devel
 - pamixer
+- brightnessctl
 - Every other dependency that are included with the previously stated.
 
 # Note

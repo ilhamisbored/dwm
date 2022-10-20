@@ -8,6 +8,7 @@
 - pkg-config
 - libXft-devel
 - freetype-devel
+- pamixer
 - Every other dependency that are included with the previously stated.
 
 # Note

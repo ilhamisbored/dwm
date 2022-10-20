@@ -13,7 +13,7 @@
 
 # Note
 I personally am using scrot, alacritty, and rofi. If you wish to use something else, you can edit the config.def.h file to replace rofi with
-any other run launcher of your choice, alacritty, scrot etc.
+any other run launcher, terminal, screenshot manager etc. of your choice.
 
 # Patches
 As you can see in this repo, my build of DWM has many QoL patches.

@@ -1,6 +1,3 @@
-# AFTER CLONING, MOVE ALL THE CONTENTS OF THE `dwm-dotfiles`
-# INTO `~/.config/`
-
 # dwm
 - Personal build of DWM
 - Built and tested on Void Linux
@@ -74,7 +71,10 @@ I'm using most of the default hotkeys, with a few changes here and there.
 
 
 # Installation of dwmblocks
-
 - Install acpi
 - `cd` into the dwmblocks directory
 - Run the `sudo make clean install` command.
+
+# Post Installation
+Move all the files from the `dwm-dotfiles` directory
+into the `~/.config/` directory.

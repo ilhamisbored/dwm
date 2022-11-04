@@ -1,3 +1,6 @@
+# AFTER CLONING, MOVE ALL THE CONTENTS OF THE `dwm-dotfiles`
+# INTO `~/.config/~
+
 # dwm
 - Personal build of DWM
 - Built and tested on Void Linux
@@ -41,7 +44,6 @@ To add a patch
 3. `sudo make clean install`
 
 # Installation
-
 `cd` into the dwm-dotfiles directory after git cloning the repository. Delete the included config.h file and run `sudo make clean install`,
 under the assumption that you installed the required dependencies.
 

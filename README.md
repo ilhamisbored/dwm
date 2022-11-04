@@ -6,7 +6,13 @@
 - pango
 - pango-devel
 - pkg-config
+- libXft
 - libXft-devel
+- libXinerama
+- libXinerama-devel
+- libX11-devel
+- fontconfig
+- fontconfig-devel
 - freetype-devel
 - pamixer
 - brightnessctl

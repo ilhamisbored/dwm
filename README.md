@@ -10,6 +10,8 @@
 - freetype-devel
 - pamixer
 - brightnessctl
+- gcc
+- clang
 - Every other dependency that are included with the previously stated.
 
 # Note

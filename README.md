@@ -1,5 +1,5 @@
 # AFTER CLONING, MOVE ALL THE CONTENTS OF THE `dwm-dotfiles`
-# INTO `~/.config/~
+# INTO `~/.config/`
 
 # dwm
 - Personal build of DWM

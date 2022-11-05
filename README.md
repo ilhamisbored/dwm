@@ -81,7 +81,7 @@ I'm using most of the default hotkeys, with a few changes here and there.
 
 # Installation of st
 - `cd` into the st directory
-` Run the `sudo make clean install` command
+- Run the `sudo make clean install` command
 
 # Post Installation
 Move all the files from the `dwm-dotfiles` directory

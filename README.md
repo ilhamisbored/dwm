@@ -3,6 +3,7 @@
 - Built and tested on Void Linux
 
 # Dependencies
+- conky
 - pango
 - pango-devel
 - pkg-config
@@ -21,7 +22,7 @@
 - Every other dependency that are included with the previously stated.
 
 # Note
-I personally am using scrot, alacritty, and rofi. If you wish to use something else, you can edit the config.def.h file to replace rofi with
+I personally am using scrot, st, and rofi. If you wish to use something else, you can edit the config.def.h file to replace rofi with
 any other run launcher, terminal, screenshot manager etc. of your choice.
 
 # Patches
@@ -74,6 +75,10 @@ I'm using most of the default hotkeys, with a few changes here and there.
 - Install acpi
 - `cd` into the dwmblocks directory
 - Run the `sudo make clean install` command.
+
+# Installation of st
+- `cd` into the st directory
+` Run the `sudo make clean install` command
 
 # Post Installation
 Move all the files from the `dwm-dotfiles` directory

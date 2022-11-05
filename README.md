@@ -21,6 +21,9 @@
 - clang
 - Every other dependency that are included with the previously stated.
 
+# Conky
+Rename `conkyrc` to `.conkyrc` and place the file in your home directory.
+
 # Note
 I personally am using scrot, st, and rofi. If you wish to use something else, you can edit the config.def.h file to replace rofi with
 any other run launcher, terminal, screenshot manager etc. of your choice.

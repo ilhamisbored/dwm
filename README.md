@@ -85,4 +85,4 @@ I'm using most of the default hotkeys, with a few changes here and there.
 
 # Post Installation
 Move all the files from the `dwm-dotfiles` directory
-into the `~/.config/` directory.
+into the `~/.config/` directory except for `conkyrc`.

@@ -1,8 +1,8 @@
-# dwm
+# dwm 6.2
 - Personal build of DWM
 - Built and tested on Void Linux
 
-# Patches
+# DWM Patches
 - autostart
 - fullgaps
 - actualfullscreen

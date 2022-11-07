@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "LigaSFMonoNerdFont:size=12:antialias=true:autohint=true";
+static char *font = "Sauce Code Pro Nerd Font:size=12:antialias=true:autohint=true";
 static char *font2[] = { 
-	"NotoEmoji Nerd Font:size=11:antialias=true:autohint=true", 
+	"Noto Nerd Font:size=11:antialias=true:autohint=true", 
 };
 
 static int borderpx = 20;

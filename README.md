@@ -2,12 +2,21 @@
 - Personal build of DWM
 - Built and tested on Void Linux
 
+# Patches
+- autostart
+- fullgaps
+- actualfullscreen
+- colorbar
+- barpadding
+- resizecorners
+
 # Dependencies
 - conky
 - pango
 - pango-devel
 - pkg-config
 - libXft
+- libXft-bgra (https://github.com/uditkarode/libxft-bgra)
 - libXft-devel
 - libXinerama
 - libXinerama-devel
@@ -18,7 +27,6 @@
 - pamixer
 - brightnessctl
 - gcc
-- clang
 - Every other dependency that are included with the previously stated.
 
 # Conky

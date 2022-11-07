@@ -2,7 +2,7 @@
 - Personal build of DWM
 - Built and tested on Void Linux
 
-# DWM Patches
+# List of DWM Patches
 - autostart
 - fullgaps
 - actualfullscreen

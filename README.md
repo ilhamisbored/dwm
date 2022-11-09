@@ -35,8 +35,9 @@
 Rename `conkyrc` to `.conkyrc` and place the file in your home directory.
 
 # Installation of DWM
-`cd` into the dwm-dotfiles directory after git cloning the repository. Run `sudo make clean install`,
-under the assumption that you installed the required dependencies.
+`cd` into the dwm-dotfiles directory after git cloning the repository. 
+Run `chmod +x autostart.sh` to make the autostart file an executable
+Run `sudo make clean install`, under the assumption that you installed the required dependencies.
 
 # Installation of dwmblocks
 - Install acpi
@@ -98,3 +99,5 @@ Go through the Installation step again.
 # Post Installation
 Move all the files from the `dwm-dotfiles` directory
 into the `~/.config/` directory except for `conkyrc`.
+Make sure to create a symlink of `~/.config/dwm` in your home directory for the autostart patch to work.
+`ln -sf ~/.config/dwm ~/.dwm`

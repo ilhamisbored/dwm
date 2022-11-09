@@ -31,13 +31,14 @@
 - gcc
 - Every other dependency that are included with the previously stated.
 
-# Conky
-Rename `conkyrc` to `.conkyrc` and place the file in your home directory.
-
 # Installation of DWM
+Clone this repository, `git clone https://github.com/ilhamisbored/dwm-dotfiles` in your home directory.
 `cd` into the dwm-dotfiles directory after git cloning the repository. 
 Run `chmod +x autostart.sh` to make the autostart file an executable
 Run `sudo make clean install`, under the assumption that you installed the required dependencies.
+
+# Conky
+Rename `conkyrc` to `.conkyrc` and place the file in your home directory.
 
 # Installation of dwmblocks
 - Install acpi

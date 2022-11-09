@@ -44,13 +44,15 @@ To remove a patch:
 
 1. `patch -R < patch-name.diff`
 2.  correct any errors that may happen
-3. `sudo make clean install`
+3. `rm config.h`
+4. `sudo make clean install`
 
 To add a patch
 
 1. `patch -Np1 < patch-name.diff`
 2.  correct any errors that may happen
-3. `sudo make clean install`
+3. `rm config.h`
+4. `sudo make clean install`
 
 # Installation
 `cd` into the dwm-dotfiles directory after git cloning the repository. Run `sudo make clean install`,

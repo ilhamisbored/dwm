@@ -34,6 +34,7 @@
 # Installation of DWM
 Clone this repository, `git clone https://github.com/ilhamisbored/dwm-dotfiles` in your home directory.
 `cd` into the dwm-dotfiles directory after git cloning the repository. 
+`cd` into the `dwm` directory.
 Run `chmod +x autostart.sh` to make the autostart file an executable
 Run `sudo make clean install`, under the assumption that you installed the required dependencies.
 

@@ -53,7 +53,7 @@ To add a patch
 3. `sudo make clean install`
 
 # Installation
-`cd` into the dwm-dotfiles directory after git cloning the repository. Delete the included config.h file and run `sudo make clean install`,
+`cd` into the dwm-dotfiles directory after git cloning the repository. Run `sudo make clean install`,
 under the assumption that you installed the required dependencies.
 
 # Recompiling
@@ -86,6 +86,7 @@ I'm using most of the default hotkeys, with a few changes here and there.
 - Install acpi
 - `cd` into the dwmblocks directory
 - Run the `sudo make clean install` command.
+- `cd` into the `scripts` directory and run `chmod +x *` to make the scripts executable
 
 # Installation of st
 - `cd` into the st directory

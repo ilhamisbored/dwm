@@ -94,7 +94,7 @@ SFMono Nerd Font Ligaturized (https://github.com/shaunsingh/SFMono-Nerd-Font-Lig
 Clone both of the directories.
 Paste them in `~/.local/share/fonts` (create the directory if you don't have it by running `mkdir ~/.local/share/fonts`.
 Move contents of the `SFMono-Nerd-Font` directory into `~/.local/share/fonts`.
-Run `unzip *` (Install the package if you do not have it installed).
+Run `unzip *.zip` (Install the package if you do not have it installed).
 
 # Hotkeys
 I'm using most of the default hotkeys, with a few changes here and there.

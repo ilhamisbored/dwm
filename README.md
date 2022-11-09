@@ -86,6 +86,15 @@ Type=Application
 I personally am using scrot, st, and rofi. If you wish to use something else, you can edit the config.def.h file to replace rofi with
 any other run launcher, terminal, screenshot manager etc. of your choice.
 
+# Required Fonts
+Source Code Pro (https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/SourceCodePro.zip)
+SFMono Nerd Font Ligaturized (https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized)
+
+Clone both of the directories.
+Paste them in `~/.local/share/fonts` (create the directory if you don't have it by running `mkdir ~/.local/share/fonts`.
+Move contents of the `SFMono-Nerd-Font` directory into `~/.local/share/fonts`.
+Run `unzip *` (Install the package if you do not have it installed).
+
 # Hotkeys
 I'm using most of the default hotkeys, with a few changes here and there.
 1. The modkey is the Super/Windows/Command key.

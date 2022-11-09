@@ -88,6 +88,7 @@ any other run launcher, terminal, screenshot manager etc. of your choice.
 
 # Required Fonts
 Source Code Pro (https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/SourceCodePro.zip)
+
 SFMono Nerd Font Ligaturized (https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized)
 
 Clone both of the directories.

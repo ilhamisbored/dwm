@@ -15,6 +15,8 @@
 - pango
 - pango-devel
 - pkg-config
+- libX11-devel
+- libXrender-devel
 - libXft
 - libXft-bgra (https://github.com/uditkarode/libxft-bgra)
 - libXft-devel
@@ -32,9 +34,19 @@
 # Conky
 Rename `conkyrc` to `.conkyrc` and place the file in your home directory.
 
-# Note
-I personally am using scrot, st, and rofi. If you wish to use something else, you can edit the config.def.h file to replace rofi with
-any other run launcher, terminal, screenshot manager etc. of your choice.
+# Installation of DWM
+`cd` into the dwm-dotfiles directory after git cloning the repository. Run `sudo make clean install`,
+under the assumption that you installed the required dependencies.
+
+# Installation of dwmblocks
+- Install acpi
+- `cd` into the dwmblocks directory
+- Run the `sudo make clean install` command.
+- `cd` into the `scripts` directory and run `chmod +x *` to make the scripts executable
+
+# Installation of st
+- `cd` into the st directory
+- Run the `sudo make clean install` command
 
 # Patches
 As you can see in this repo, my build of DWM has many QoL patches.
@@ -54,13 +66,6 @@ To add a patch
 3. `rm config.h`
 4. `sudo make clean install`
 
-# Installation
-`cd` into the dwm-dotfiles directory after git cloning the repository. Run `sudo make clean install`,
-under the assumption that you installed the required dependencies.
-
-# Recompiling
-Same steps as above.
-
 # Starting it from a Display Manager (GDM, SDDM, etc;)
 Create a .desktop file in /usr/share/xsessions/
 
@@ -74,6 +79,10 @@ Exec=dwm
 
 Type=Application
 
+# Note
+I personally am using scrot, st, and rofi. If you wish to use something else, you can edit the config.def.h file to replace rofi with
+any other run launcher, terminal, screenshot manager etc. of your choice.
+
 # Hotkeys
 I'm using most of the default hotkeys, with a few changes here and there.
 1. The modkey is the Super/Windows/Command key.
@@ -83,16 +92,8 @@ I'm using most of the default hotkeys, with a few changes here and there.
 5. Mod + Printscreen takes a screenshot of the entire screen
 6. Mod + Shift + Q kills the current dwm process
 
-
-# Installation of dwmblocks
-- Install acpi
-- `cd` into the dwmblocks directory
-- Run the `sudo make clean install` command.
-- `cd` into the `scripts` directory and run `chmod +x *` to make the scripts executable
-
-# Installation of st
-- `cd` into the st directory
-- Run the `sudo make clean install` command
+# Recompiling
+Go through the Installation step again.
 
 # Post Installation
 Move all the files from the `dwm-dotfiles` directory

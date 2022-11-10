@@ -15,6 +15,8 @@
 - pango
 - pango-devel
 - pkg-config
+- harfbuzz-devel 
+- libXcursor-devel
 - libX11-devel
 - libXrender-devel
 - libXft

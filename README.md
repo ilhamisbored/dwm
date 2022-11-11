@@ -34,20 +34,23 @@
 - Every other dependency that are included with the previously stated.
 
 # Installation of DWM
-Clone this repository, `git clone https://github.com/ilhamisbored/dwm-dotfiles` in your home directory.
-`cd` into the dwm-dotfiles directory after git cloning the repository. 
-`cd` into the `dwm` directory.
-Run `chmod +x autostart.sh` to make the autostart file an executable
-Run `sudo make clean install`, under the assumption that you installed the required dependencies.
+- Clone this repository, `git clone https://github.com/ilhamisbored/dwm-dotfiles` in your home directory.
+- `cd` into the dwm-dotfiles directory after git cloning the repository. 
+- `cd` into the `dwm` directory.
+- Run `chmod +x autostart.sh` to make the autostart file an executable
+- Run `sudo make clean install`, under the assumption that you installed the required dependencies.
 
 # Conky
-Rename `conkyrc` to `.conkyrc` and place the file in your home directory.
+- Rename `conkyrc` to `.conkyrc` and place the file in your home directory.
+- Conky Symbols (paste in `~/.local/share/fonts`): https://cdn.discordapp.com/attachments/746213996067291138/1040476182895923280/ConkySymbols.ttf
 
 # Installation of dwmblocks
 - Install acpi
 - `cd` into the dwmblocks directory
 - Run the `sudo make clean install` command.
 - `cd` into the `scripts` directory and run `chmod +x *` to make the scripts executable
+- For Void users, download my script for the updates block and paste it in `/usr/loca/bin/`. Link: https://github.com/ilhamisbored/xbps-updates
+- For non-Void users, find out your distro's update checking command and edit the updates block.
 
 # Installation of st
 - `cd` into the st directory
@@ -93,10 +96,10 @@ Source Code Pro (https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.
 
 SFMono Nerd Font Ligaturized (https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized)
 
-Clone both of the directories.
-Paste them in `~/.local/share/fonts` (create the directory if you don't have it by running `mkdir ~/.local/share/fonts`.
-Move contents of the `SFMono-Nerd-Font` directory into `~/.local/share/fonts`.
-Run `unzip *.zip` (Install the package if you do not have it installed).
+- Clone both of the directories.
+- Paste them in `~/.local/share/fonts` (create the directory if you don't have it by running `mkdir ~/.local/share/fonts`.
+- Move contents of the `SFMono-Nerd-Font` directory into `~/.local/share/fonts`.
+- Run `unzip *.zip` (Install the package if you do not have it installed).
 
 # Hotkeys
 I'm using most of the default hotkeys, with a few changes here and there.
@@ -111,7 +114,5 @@ I'm using most of the default hotkeys, with a few changes here and there.
 Go through the Installation step again.
 
 # Post Installation
-Move all the files from the `dwm-dotfiles` directory
-into the `~/.config/` directory except for `conkyrc`.
-Make sure to create a symlink of `~/.config/dwm` in your home directory for the autostart patch to work.
-`ln -sf ~/.config/dwm ~/.dwm`
+- Move all the files from the `dwm-dotfiles` directory into the `~/.config/` directory except for `conkyrc`.
+- Make sure to create a symlink of `~/.config/dwm` in your home directory for the autostart patch to work. `ln -sf ~/.config/dwm ~/.dwm`

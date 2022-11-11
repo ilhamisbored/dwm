@@ -11,10 +11,16 @@
 - resizecorners
 
 # Dependencies
+- make
 - conky
 - pango
 - pango-devel
 - pkg-config
+- automake
+- autoconf
+- xorg-util-macros
+- libtool
+- libXext-devel
 - harfbuzz-devel 
 - libXcursor-devel
 - libX11-devel

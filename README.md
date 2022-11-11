@@ -49,8 +49,8 @@
 - `cd` into the dwmblocks directory
 - Run the `sudo make clean install` command.
 - `cd` into the `scripts` directory and run `chmod +x *` to make the scripts executable
-- For Void users, download my script for the updates block and paste it in `/usr/loca/bin/`. Link: https://github.com/ilhamisbored/xbps-updates
-- Run `sudo chmod +x /usr/local/bin/xbps-updates`.
+- For Void users, download my script for the updates block. Link: https://github.com/ilhamisbored/xbps-updates
+- Installation commands are in the `xbps-updates` GitHub repository..
 - For non-Void users, find out your distro's update checking command and edit the updates block.
 
 # Installation of st
